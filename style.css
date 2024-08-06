@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    gap: 2rem; /* Espaço entre os cards */
+}
+
+.card {
+    background: #fff;
+    border-radius: 1rem; /* Bordas arredondadas mais suaves */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    padding: 1.5rem; /* Padding maior */
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem); /* Elevação no hover */
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto */
+}
+
+.card a.button-link {
+    background-color: #007bff;
+    border-radius: 0.5rem; /* Bordas arredondadas do link */
+    color: white;
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Padding do link */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem; /* Tamanho da fonte do link */
+    text-align: center;
+}
+
+.card a.button-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Leve aumento no tamanho do link ao passar o mouse */
+}
