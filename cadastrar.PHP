@@ -21,8 +21,17 @@
                 
                 <label for="quantidade_em_estoque">Quantidade em Estoque:</label>
                 <input type="number" id="quantidade_em_estoque" name="quantidade_em_estoque" required>
+
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
                 
+            <div class="button-group">
                 <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </div>
             </form>
         </div>
     </div>

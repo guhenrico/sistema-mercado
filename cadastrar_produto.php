@@ -18,10 +18,13 @@ $nome = $_POST['nome'];
 $descricao = $_POST['descricao'];
 $valor_unitario = $_POST['valor_unitario'];
 $quantidade_em_estoque = $_POST['quantidade_em_estoque'];
+$codigo = $_POST['codigo'];
+$marca = $_POST['marca'];
 
 
-$sql = "INSERT INTO produtos (nome, descricao, valor_unitario, quantidade_em_estoque)
-VALUES ('$nome', '$descricao', $valor_unitario, $quantidade_em_estoque)";
+
+$sql = "INSERT INTO produtos (nome, descricao, valor_unitario, quantidade_em_estoque, codigo, marca)
+VALUES ('$nome', '$descricao', $valor_unitario, $quantidade_em_estoque, '$codigo', '$marca')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Produto cadastrado com sucesso!";

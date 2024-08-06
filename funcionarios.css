@@ -43,7 +43,7 @@ body {
     color: #333;
 }
 
-.form-card input, .form-card textarea {
+.form-card input {
     padding: 0.75rem;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
@@ -51,12 +51,12 @@ body {
     font-size: 1rem;
 }
 
-.form-card .button-group {
+.button-group {
     display: flex;
     justify-content: space-between;
 }
 
-.form-card button {
+.button-group button {
     border: none;
     border-radius: 0.5rem;
     padding: 0.75rem 1rem;
@@ -65,22 +65,21 @@ body {
     transition: background-color 0.3s;
 }
 
-.form-card button[type="submit"] {
+.button-group button[type="submit"] {
     background-color: #007bff;
     color: white;
 }
 
-.form-card button[type="submit"]:hover {
+.button-group button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.form-card button[type="reset"] {
-    background-color: #f40505;
+.button-group button[type="reset"] {
+    background-color: #6c757d;
     color: white;
 }
 
-.form-card button[type="reset"]:hover {
+.button-group button[type="reset"]:hover {
     background-color: #5a6268;
 }
-
-
+       
